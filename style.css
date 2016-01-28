@@ -1,0 +1,48 @@
+#main-content {
+  width: 85%;
+  background: #F6F6EF;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+}
+
+#main-header {
+  background: #FF6600;
+}
+
+#main-logo {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  margin: 2px;
+}
+
+#main-site-name {
+  font-weight: bold;
+}
+
+#main-site-menu {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 20px;
+  display: inline-block;
+}
+
+#main-site-menu > li {
+  display: inline-block;
+}
+
+#main-auth {
+  display: inline-block;
+  float: right;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.header-links {
+  text-decoration: none;
+  color: black;
+}
