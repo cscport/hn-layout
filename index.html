@@ -67,7 +67,7 @@
       <ol id="posts">
         <li ng-repeat="post in vm.posts" class="post">
           <div class="post-description">
-            <span class="upvote"></span>  {{post.title}} <span class="link-source">(<a href="#" class="cn-link">{{post.source}}</a>)</span>
+            <span class="upvote"></span>  <a href="#">{{post.title}}</a> <span class="link-source">(<a href="#" class="cn-link">{{post.source}}</a>)</span>
           </div>
           <div class="post-status">
             {{post.points}} points by <a href="#" class="cn-link">{{post.submitter}}</a> <a href="#" class="cn-link">{{post.submittedAt | date: 'h'}} hours ago</a> | <a href="#" class="cn-link">{{ post.numberOfComments }} comments</a>

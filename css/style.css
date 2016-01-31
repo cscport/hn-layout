@@ -42,6 +42,11 @@
   margin-right: 5px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .header-links {
   text-decoration: none;
   color: black;
@@ -100,21 +105,11 @@
   padding-bottom: 10px;
 }
 
-#more a {
-  color: black;
-  text-decoration: none;
-}
-
 #footer {
   border-top: 2px solid #FF6600;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-#footer a {
-  color: black;
-  text-decoration: none;
 }
 
 #footer-nav {
