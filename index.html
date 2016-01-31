@@ -64,21 +64,44 @@
       </div>
     </div>
     <div id="main-content">
-      <ol>
-        <li ng-repeat="post in vm.posts">
-          <div>
-            {{post.title}} ({{post.source}})
+      <ol id="posts">
+        <li ng-repeat="post in vm.posts" class="post">
+          <div class="post-description">
+            <span class="upvote"></span>  {{post.title}} <span class="link-source">(<a href="#" class="cn-link">{{post.source}}</a>)</span>
           </div>
-          <div>
-            {{post.points}} points by {{post.submitter}} {{post.submittedAt | date: 'h'}} hours ago | {{ vm.numberOfComments }} comments
+          <div class="post-status">
+            {{post.points}} points by <a href="#" class="cn-link">{{post.submitter}}</a> <a href="#" class="cn-link">{{post.submittedAt | date: 'h'}} hours ago</a> | <a href="#" class="cn-link">{{ post.numberOfComments }} comments</a>
           </div>
         </li>
       </ol>
-      <div>
-        More
+      <div id="more">
+        <a href="#">More</a>
       </div>
-      <div>
-        Footer
+      <div id="footer">
+        <ul id="footer-nav">
+          <li>Guidelines</li>
+          <li>|</li>
+          <li>FAQ</li>
+          <li>|</li>
+          <li>Support</li>
+          <li>|</li>
+          <li>API</li>
+          <li>|</li>
+          <li>Security</li>
+          <li>|</li>
+          <li>Lists</li>
+          <li>|</li>
+          <li>Bookmarklet</li>
+          <li>|</li>
+          <li>DMCA</li>
+          <li>|</li>
+          <li>Apply to YC</li>
+          <li>|</li>
+          <li>Contact</li>
+        </ul>
+        <form id="search">
+          <label>Search:</label> <input type="text"></input>
+        </form>
       </div>
     </div>
   </div>
